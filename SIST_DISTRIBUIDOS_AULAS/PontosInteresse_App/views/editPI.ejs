@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit PI</title>
+</head>
+<body>
+<h2>Edit</h2>
+    <button><a href="/api/listall">List All</a></button>
+    <form action="/api/update/<%= pi._id %>" method="POST">
+      <input type="text" value="<%= pi.name %>" name="name">
+      <input type="text" value="<%= pi.details %>" name="details">
+      <input type="text" value="<%= pi.status %>" name="status">
+      <input type="text" value="<%= pi.geometry.coordinates[0] %>" name="geometry.coordinates[0]">
+      <input type="text" value="<%= pi.geometry.coordinates[1] %>" name="geometry.coordinates[1]">
+      <button type="submit">Update</button>
+    </form>
+</body>
+</html>

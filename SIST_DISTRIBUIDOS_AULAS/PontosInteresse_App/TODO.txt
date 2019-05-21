@@ -1,0 +1,25 @@
+::
+1. CRIAR INPUTs com:
+	"name": "Miuda Gira04",
+    "details": "lindos olhos!",
+    "status": true,
+    "geometry": {"type": "point", "coordinates": [-81.1, 24.95]}
+DEVE DEVOLVER LISTA DE PIs com:
+	"name": "Miuda Gira04",
+    "details": "lindos olhos!",
+    "status": true
+	
+::
+2. CAPTURAR "coordinates" A PARTIR DE API
+
+// :: --------------------------------------------------------------------------
+NEXT:
+	. 
+	
+// NOTAS:
+.. > db.pontosinteresses.find().pretty();
+	
+::
+	
+
+	

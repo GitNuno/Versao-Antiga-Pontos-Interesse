@@ -1,0 +1,22 @@
+<!DOCTYPE <html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TESTE</title>
+  <link rel="stylesheet" type="text/css" href="/assets/colocoAquiMeuCSS.css">
+</head>
+<body>
+  <h2>Criar Ponto Interesse<h2>
+  <button><a href="/api/listall">List All</a></button>
+  <%# "/api/interest"-> rota de criação de novo registo %>
+  <form action="/api/create" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="details" name="details">
+    <input type="text" placeholder="longitude" name="geometry.coordinates[0]">
+    <input type="text" placeholder="latitude" name="geometry.coordinates[1]">
+    <%# FAZER 'status' COM CHECKBOX='TRUE' %>
+    <%# <input type="text" placeholder="status" name="status"> %>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

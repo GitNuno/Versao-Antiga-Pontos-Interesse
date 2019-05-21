@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista PIs</title>
+  <link rel="stylesheet" type="text/css" href="/assets/colocoAquiMeuCSS.css">
+</head>
+<body>
+  <h2>Lista de Pontos de Interesse<h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Details</td>
+        <td>Status</td>
+        <td>Longitude</td>
+        <td>Latitude</td>
+      </tr>
+    </thead>
+    <tbody>
+    <% pis.forEach(function(data) { %>
+      <tr>
+        <td><%= data.name %></td>
+        <td><%= data.details %></td>
+        <td><%= data.status %></td>
+        <td><%= data.geometry.coordinates[0] %></td>
+        <td><%= data.geometry.coordinates[1] %></td>
+        <td><a href="/api/edit/<%= data._id %>">Edit</a> |
+            <a onclick="confirmation('Delete record?!','/api/delete/<%= data._id %>')" href=# >Delete</a></td>
+      </tr>
+    <% }) %>
+    </tbody>
+    <button><a href="/">Back</a></button>
+
+<script>
+function confirmation(msg, url) {
+            if(confirm(msg)) {
+                window.location.href = url;
+            }else{ false; } 
+            }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+	"name": "Miuda Gira01",
+    "details": "lindos olhos!",
+    "status": true,
+    "geometry": {"type": "point", "coordinates": [-80.88, 25.88]}
+}
+
+{
+	"name": "Miuda Gira02",
+    "details": "lindos olhos!",
+    "status": true,
+    "geometry": {"type": "point", "coordinates": [-80.789, 25.701]}
+}
+
+{
+	"name": "Miuda Gira03",
+    "details": "lindos olhos!",
+    "status": true,
+    "geometry": {"type": "point", "coordinates": [-80.245, 25.391]}
+}
+
+{
+	"name": "Miuda Gira04",
+    "details": "lindos olhos!",
+    "status": true,
+    "geometry": {"type": "point", "coordinates": [-81.1, 24.95]}
+}
+
+{
+	"name": "Miuda Gira05",
+    "details": "lindos olhos!",
+    "status": true,
+    "geometry": {"type": "point", "coordinates": [-82.589, 26.701]}
+}
+
+{
+	"name": "Miuda Gira06",
+    "details": "lindos olhos!",
+    "status": true,
+    "geometry": {"type": "point", "coordinates": [-79.789, 25.01]}
+}
